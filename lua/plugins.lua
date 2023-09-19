@@ -124,6 +124,17 @@ return {
   },
   -- }}}
 
+  -- Autoclose {{{
+  {
+    "m4xshen/autoclose.nvim",
+    branch = "main",
+    dependencies = {
+    },
+    config = function ()
+      require "extensions.autoclose"
+    end
+  },
+  -- }}}
 }
 
 -- vim:tabstop=2 shiftwidth=2 expandtab syntax=lua foldmethod=marker foldlevelstart=0 foldlevel=0
