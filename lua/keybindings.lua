@@ -3,6 +3,11 @@ require "helpers/keyboard"
 
 g.mapleader = ' '                                                                 -- Use Space, like key for alternative hotkeys
 
+-- Personal Keybinds {{{
+  im('jk', '<Esc>')
+  vm('jk', '<Esc>')
+--- }}}
+
 -- LSP {{{
 nm('K', '<cmd>lua vim.lsp.buf.hover()<CR>' )                                      -- Hover object
 nm('ga', '<cmd>lua vim.lsp.buf.code_action()<CR>')                                -- Code actions

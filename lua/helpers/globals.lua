@@ -4,4 +4,5 @@ lsp = vim.lsp; -- LSP API
 fn = vim.fn;   -- Vim function
 g = vim.g;     -- Vim globals
 opt = vim.opt; -- Vim optionals
+wo = vim.wo;   -- Vim window
 theme = "sonokai"

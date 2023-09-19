@@ -1,5 +1,5 @@
 -- Alias for function, that set new keybindings
-local map = vim.api.nvim_set_keymap 
+local map = vim.api.nvim_set_keymap
 
 -- Normal mode keybinding setter
 function nm(key, command) 
