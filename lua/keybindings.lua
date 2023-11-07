@@ -37,4 +37,14 @@ nm('gr', '<cmd>Trouble lsp_references<CR>')                                     
 nm('<leader>v', '<cmd>NeoTreeFocusToggle<CR>')                                        -- Toggle file explorer
 -- }}}
 
+-- lsp_lines {{{
+vim.keymap.set('n', '<leader>l', function()
+  vim.diagnostic.config({
+    virtual_text = not vim.diagnostic.config().virtual_text,
+    virtual_lines = not vim.diagnostic.config().virtual_lines,
+  })
+end)
+-- }}}
+
+
 -- vim:tabstop=2 shiftwidth=2 expandtab syntax=lua foldmethod=marker foldlevelstart=0 foldlevel=0

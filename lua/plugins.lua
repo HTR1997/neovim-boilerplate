@@ -135,6 +135,16 @@ return {
     end
   },
   -- }}}
+
+  -- lsp_lines {{{
+  {
+  "ErichDonGubler/lsp_lines.nvim",
+  branch = "main",
+  config = function ()
+    require "extensions.lsp_lines"
+  end
+  },
+  --- }}}
 }
 
 -- vim:tabstop=2 shiftwidth=2 expandtab syntax=lua foldmethod=marker foldlevelstart=0 foldlevel=0
