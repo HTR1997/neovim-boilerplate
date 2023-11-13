@@ -18,6 +18,7 @@ mason_lspconfig.setup({
     "pyright",            -- LSP for Python
     "volar",              -- LSP for Vue
     "svelte",             -- LSP for Svelte
+    "rust_analyzer",      -- LSP for Rust
 --  "gopls",              -- LSP for Go
   }
 });

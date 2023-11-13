@@ -1,4 +1,8 @@
 local autoclose = require("autoclose")
 
-autoclose.setup({})
+autoclose.setup({
+  keys = {
+    ["<"] = { escape = false, close = true, pair = "<>" }
+  }
+})
 
