@@ -20,7 +20,7 @@ nm('gd', '<cmd>Telescope lsp_definitions<CR>')                            -- Got
 nm('<leader>p', '<cmd>Telescope oldfiles<CR>')                                   -- Show recent files
 nm('<leader>O', '<cmd>Telescope git_files<CR>')                                  -- Search for a file in project
 nm('<leader>o', '<cmd>Telescope find_files<CR>')                                 -- Search for a file (ignoring git-ignore)
-nm('<leader>i', '<cmd>Telescope jumplist<CR>')                                   -- Show jumplist (previous locations)
+-- nm('<leader>i', '<cmd>Telescope jumplist<CR>')                                   -- Show jumplist (previous locations)
 nm('<leader>b', '<cmd>Telescope git_branches<CR>')                               -- Show git branches
 nm('<leader>f', '<cmd>Telescope live_grep<CR>')                                  -- Find a string in project
 nm('<leader>q', '<cmd>Telescope buffers<CR>')                                    -- Show all buffers
@@ -46,5 +46,8 @@ vim.keymap.set('n', '<leader>l', function()
 end)
 -- }}}
 
+-- typescript-tools {{{
+nm('<leader>i', '<cmd>TSToolsAddMissingImports<CR>')
+-- }}}
 
 -- vim:tabstop=2 shiftwidth=2 expandtab syntax=lua foldmethod=marker foldlevelstart=0 foldlevel=0

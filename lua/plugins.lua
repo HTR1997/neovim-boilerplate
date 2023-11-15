@@ -145,6 +145,16 @@ return {
   end
   },
   --- }}}
+
+
+  -- typescript_tools {{{
+  {
+  "pmizio/typescript-tools.nvim",
+  branch = "master",
+  dependencies = {"nvim-lua/plenary.nvim", "neovim/nvim-lspconfig"},
+  opts = {},
+  },
+  --- }}}
 }
 
 -- vim:tabstop=2 shiftwidth=2 expandtab syntax=lua foldmethod=marker foldlevelstart=0 foldlevel=0
