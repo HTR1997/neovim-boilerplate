@@ -18,6 +18,7 @@ g.nocompatible = true
 wo.wrap = false
 opt.number = true
 opt.relativenumber = true
+opt.signcolumn = "yes"
 
 
 -- }}}
@@ -37,7 +38,8 @@ opt.fixeol = false -- Turn off appending new line in the end of a file
 -- }}}
 
 -- Folding {{{
-opt.foldmethod = 'syntax'
+opt.foldmethod = "indent"
+--opt.foldexpr = "nvim_treesitter#foldexpr()"
 -- }}}
 
 -- Search {{{
