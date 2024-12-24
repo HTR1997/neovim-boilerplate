@@ -6,6 +6,15 @@ g.mapleader = ' '                                                               
 -- Personal Keybinds {{{
   im('jk', '<Esc>')
   vm('jk', '<Esc>')
+
+--    Open this file in visual split
+  nm('<leader>ev', ':vsplit $HOME/.config/nvim/lua/keybindings.lua<CR>')
+--    Source this file
+  nm('<leader>so', ':so $HOME/.config/nvim/lua/keybindings.lua<CR>')
+
+  nm('<leader>r', ':w<CR>:silent !../run_file.sh<CR>')
+
+
 --- }}}
 
 -- LSP {{{
@@ -16,7 +25,7 @@ nm('gD', '<cmd>lua vim.lsp.buf.declaration()<cr>')                              
  -- }}}
 
 -- Telescope {{{
-nm('gd', '<cmd>Telescope lsp_definitions<CR>')                            -- Goto declaration
+nm('<leader>d', '<cmd>Telescope lsp_definitions<CR>')                            -- Goto declaration
 nm('<leader>p', '<cmd>Telescope oldfiles<CR>')                                   -- Show recent files
 nm('<leader>O', '<cmd>Telescope git_files<CR>')                                  -- Search for a file in project
 nm('<leader>o', '<cmd>Telescope find_files<CR>')                                 -- Search for a file (ignoring git-ignore)
@@ -39,10 +48,11 @@ nm('<leader>v', '<cmd>NeoTreeFocusToggle<CR>')                                  
 
 -- lsp_lines {{{
 vim.keymap.set('n', '<leader>l', function()
-  vim.diagnostic.config({
-    virtual_text = not vim.diagnostic.config().virtual_text,
-    virtual_lines = not vim.diagnostic.config().virtual_lines,
-  })
+    vim.diagnostic.open_float()
+    -- vim.diagnostic.config({
+    --virtual_text = vim.diagnostic.config().virtual_text,
+    -- virtual_lines = vim.diagnostic.config().virtual_lines
+    --})
 end)
 -- }}}
 

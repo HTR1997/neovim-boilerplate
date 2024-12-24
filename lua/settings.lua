@@ -17,7 +17,7 @@ opt.list = true
 g.nocompatible = true
 wo.wrap = false
 opt.number = true
-opt.relativenumber = true
+opt.relativenumber = false
 opt.signcolumn = "yes"
 
 
