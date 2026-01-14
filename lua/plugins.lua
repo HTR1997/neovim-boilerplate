@@ -155,6 +155,23 @@ return {
   opts = {},
   },
   --- }}}
+
+
+  -- love2d nvim {{{
+  {
+    "S1M0N38/love2d.nvim",
+    cmd = "LoveRun",
+    opts = {
+      path_to_love_bin = "/Users/harrisonread/Applications/love.app/Contents/MacOS/love",
+    },
+    keys = {
+      { "<leader>sl<CR>", ft = "lua", desc = "LÖVE" },
+      --{ "<leader>r", "<cmd>LoveRun<cr>", ft = "lua", desc = "Run LÖVE" },
+    }
+  },
+  -- }}}
+
+
 }
 
 -- vim:tabstop=2 shiftwidth=2 expandtab syntax=lua foldmethod=marker foldlevelstart=0 foldlevel=0

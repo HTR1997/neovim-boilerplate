@@ -12,7 +12,8 @@ g.mapleader = ' '                                                               
 --    Source this file
   nm('<leader>so', ':so $HOME/.config/nvim/lua/keybindings.lua<CR>')
 
-  nm('<leader>r', ':w<CR>:silent !../run_file.sh<CR>')
+--nm('<leader>r', ':w<CR>:silent !../run_file.sh<CR>')
+  nm('<leader>r', ':w<CR>:silent !npx tsc %<CR>')
 
 
 --- }}}
@@ -58,6 +59,13 @@ end)
 
 -- typescript-tools {{{
 nm('<leader>i', '<cmd>TSToolsAddMissingImports<CR>')
+-- }}}
+
+-- love2d nvim {{{
+--nm("<leader>r", "<cmd>LoveRun<cr>")
+-- { "<leader>v", ft = "lua", desc = "LÖVE" },
+-- { "<leader>vv", "<cmd>LoveRun<cr>", ft = "lua", desc = "Run LÖVE" },
+-- { "<leader>vs", "<cmd>LoveStop<cr>", ft = "lua", desc = "Stop LÖVE" },
 -- }}}
 
 -- vim:tabstop=2 shiftwidth=2 expandtab syntax=lua foldmethod=marker foldlevelstart=0 foldlevel=0
