@@ -30,6 +30,11 @@ opt.tabstop = 2                     -- 1 tab equal 2 spaces
 opt.smartindent = true              -- Turn on smart indentation. See in the docs for more info
 opt.autoindent = true
 
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "cs",
+  command = "setlocal shiftwidth=4 tabstop=4"
+})
+
 -- }}}
 
 -- Clipboard {{{

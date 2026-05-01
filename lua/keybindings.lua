@@ -13,7 +13,7 @@ g.mapleader = ' '                                                               
   nm('<leader>so', ':so $HOME/.config/nvim/lua/keybindings.lua<CR>')
 
 --nm('<leader>r', ':w<CR>:silent !../run_file.sh<CR>')
-  nm('<leader>r', ':w<CR>:silent !npx tsc %<CR>')
+nm('<leader>r', ':w<CR>:silent !npx tsc %<CR>')
 
 
 --- }}}
@@ -69,3 +69,4 @@ nm('<leader>i', '<cmd>TSToolsAddMissingImports<CR>')
 -- }}}
 
 -- vim:tabstop=2 shiftwidth=2 expandtab syntax=lua foldmethod=marker foldlevelstart=0 foldlevel=0
+

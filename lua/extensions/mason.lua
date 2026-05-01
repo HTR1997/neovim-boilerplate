@@ -12,12 +12,13 @@ mason.setup()
 mason_lspconfig.setup({
   ensure_installed = {
     "lua_ls",             -- LSP for Lua language
-    "ts_ls",           -- LSP for Typescript and Javascript
+    "ts_ls",              -- LSP for Typescript and Javascript
     "emmet_ls",           -- LSP for Emmet (Vue, HTML, CSS)
     "cssls",              -- LSP for CSS
     "pyright",            -- LSP for Python
     "volar",              -- LSP for Vue
-    "svelte",               -- LSP for Svelte
+    "svelte",             -- LSP for Svelte
+    "csharp_ls",          -- LSP for CSharp
 --  "rust_analyzer"       -- LSP for Rust
 --  "glsl_analyzer"       -- LSP for GLSL
 --  "gopls",              -- LSP for Go
